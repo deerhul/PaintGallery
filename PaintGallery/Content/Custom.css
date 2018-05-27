@@ -5,28 +5,75 @@
 #images {
     width: 50rem;
     height: 50rem;
-    border-style: solid;
-    border-width: 5px;
-    border-color:grey;
     margin: 5px 10px;
     padding: 0px;
-    transition: all 1s;
+    transition: .5s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 1;
+    backface-visibility:hidden;
 }
 
-#images:hover{
-    transform:scale(1.05);
+.carousel-inner:hover #images {
+    opacity: 0.3;
+    transform: scale(1.05);
+}
+
+.carousel-inner:hover #titleAuthor {
+    opacity: 1;
+}
+
+.text {
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.5em;
+    padding: 16px, 32px;
+    opacity: 0;
 }
 
 .carousel-inner {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
 #titleAuthor {
     color: gold;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+#authpic {
+    width: 50rem;
+    height: 50rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#authdesc {
+    /*background-color: rgba(255, 99, 71, 0.2);*/
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 2em;
+    
+    color: white;
+    padding: 2em;
+    flex-wrap: wrap;
+}
+
+#authdescbox {
+    background-color: rgba(255,255,255, 1);
+    background: linear-gradient(to right, white, pink);
+}
+
+#aboutBG {
+    /*background-image: url("../Images/background.jpg");*/
 }
 /*
     --------------------------------------------

@@ -223,6 +223,8 @@
     <Content Include="Images\5.jpg" />
     <Content Include="Images\6.jpg" />
     <Content Include="Images\7.png" />
+    <Content Include="Images\authpic.jpeg" />
+    <Content Include="Images\background.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
