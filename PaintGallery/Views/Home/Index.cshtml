@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<PaintGallery.Models.Items.Paintings>
+
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -10,68 +12,77 @@
 
 <div class="jumbotron">
     <h1>Alchelle's Gallery</h1>
+    @*@{ foreach (var painting in Model)
+            {
+                <img src="@Url.Content(painting.ImageURL)" />
+                @Html.DisplayFor(p => painting.author)
+                @Html.DisplayFor(n => painting.Name)
+                @Html.DisplayFor(d => painting.Description)
+            }
+        }*@
 
     <div id="mycarousel" class="carousel slide" data-wrap="true" data-ride="carousel" style="margin: 5px 10px">
         <ol class="carousel-indicators">
             <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
             <li data-target="#mycarousel" data-slide-to="1"></li>
             <li data-target="#mycarousel" data-slide-to="2"></li>
-            <li data-target="#mycarousel" data-slide-to="3"></li>
+            @*<li data-target="#mycarousel" data-slide-to="3"></li>
             <li data-target="#mycarousel" data-slide-to="4"></li>
             <li data-target="#mycarousel" data-slide-to="5"></li>
-            <li data-target="#mycarousel" data-slide-to="6"></li>
+            <li data-target="#mycarousel" data-slide-to="6"></li>*@
         </ol>
 
 
         <div class="carousel-inner" role="listbox">
 
             <div class="item active">
-                <img src="~/Images/1.png" id="images" />
-                <p id="titleAuthor"><b>"Alex ironman"</b> By Alchelle </p>
+                <img src="@Url.Content(@Model[0].ImageURL)" id="images" />
+                <div class="carousel-caption">
+                    <p id="titleAuthor"><b>"@Model[0].Name"</b> By @Model[0].author </p>
+                </div>
             </div>
 
 
             <div class="item">
-                <img src="~/Images/2.png" id="images" />
-                <div id="middle">
-                    <div class="text"> Place holder Text for later</div>
-                </div>
+                <img src="@Url.Content(@Model[1].ImageURL)" id="images" />
                 <div class="carousel-caption">
-                    <p id="titleAuthor"><b>"Rea"</b> By Alchelle</p>
+                    <p id="titleAuthor"><b>"@Model[1].Name"</b> By @Model[1].author </p>
                 </div>
             </div>
             <div class="item">
-                <img src="~/Images/3.jpg" id="images" />
+                <img src="@Url.Content(@Model[2].ImageURL)" id="images" />
                 <div class="carousel-caption">
-                    <p id="titleAuthor"><b>"Dreams"</b> By Alchelle</p>
+                    <p id="titleAuthor"><b>"@Model[2].Name"</b> By @Model[2].author </p>
                 </div>
             </div>
-            <div class="item">
-                <img src="~/Images/4.jpg" id="images" />
-                <div class="carousel-caption">
-                    <p id="titleAuthor"><b>"Emotions Through My Smile"</b> By Alchelle</p>
+
+            @*<div class="item">
+                    <img src="~/Images/4.jpg" id="images" />
+                    <div class="carousel-caption">
+                        <p id="titleAuthor"><b>"Emotions Through My Smile"</b> By Alchelle</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <img src="~/Images/5.jpg" id="images" />
-                <div class="carousel-caption">
-                    <p id="titleAuthor"><b>"I want to be Beautiful"</b> By Alchelle</p>
+                <div class="item">
+                    <img src="~/Images/5.jpg" id="images" />
+                    <div class="carousel-caption">
+                        <p id="titleAuthor"><b>"I want to be Beautiful"</b> By Alchelle</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <img src="~/Images/6.jpg" id="images" />
-                <div class="carousel-caption">
-                    <p id="titleAuthor"><b>"Snow White"</b> By Alchelle6</p>
+                <div class="item">
+                    <img src="~/Images/6.jpg" id="images" />
+                    <div class="carousel-caption">
+                        <p id="titleAuthor"><b>"Snow White"</b> By Alchelle6</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <img src="~/Images/7.png" id="images" />
-                <div class="carousel-caption">
-                    <p id="titleAuthor"><b>"Techonology"</b> By Alchelle</p>
-                </div>
-            </div>
+                <div class="item">
+                    <img src="~/Images/7.png" id="images" />
+                    <div class="carousel-caption">
+                        <p id="titleAuthor"><b>"Techonology"</b> By Alchelle</p>
+                    </div>
+                </div>*@
 
         </div>
+
 
         @*<a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>

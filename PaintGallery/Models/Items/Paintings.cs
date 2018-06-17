@@ -9,6 +9,7 @@ namespace PaintGallery.Models.Items
     {
         public string Name { get; set; }
         public string Description { get; set; }
-        public Person author { get; set; }
+        public string author { get; set; }
+        public string ImageURL { get; set; }
     }
 }
