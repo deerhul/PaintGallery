@@ -51,7 +51,11 @@ namespace PaintGallery.Controllers
                     List<Paintings> paintings = new List<Paintings> {
                 new Paintings(){author="Alchelle", Description="place holder description", ImageURL="~/Images/1.png",Name="Alex Ironman"},
                 new Paintings(){author="Alchelle", Description="place holder description", ImageURL="~/Images/2.png",Name="Rea"},
-                new Paintings(){author="Alchelle", Description="place holder description", ImageURL="~/Images/3.jpg",Name="Dreams"}
+                new Paintings(){author="Alchelle", Description="place holder description", ImageURL="~/Images/3.jpg",Name="Dreams"},
+                new Paintings(){author="Alchelle", Description="place holder description", ImageURL="~/Images/4.jpg",Name="Emotions Through My Smile"},
+                new Paintings(){author="Alchelle", Description="place holder description", ImageURL="~/Images/5.jpg",Name="I want to be Beautiful"},
+                new Paintings(){author="Alchelle", Description="place holder description", ImageURL="~/Images/6.jpg",Name="Snow White"},
+                new Paintings(){author="Alchelle", Description="place holder description", ImageURL="~/Images/7.png",Name="Technology"}
             };
                     serializer.Serialize(file, paintings);
                 }
