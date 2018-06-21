@@ -22,8 +22,11 @@ namespace PaintGallery.Controllers
                 createJSON();
             }
 
+            var paintingList = from paint in DeserializeJSON()
+                               orderby paint.Name ascending
+                               select paint;
 
-            return View(DeserializeJSON());
+            return View(paintingList.ToList());
         }
 
         public ActionResult About()
