@@ -50,11 +50,11 @@
     -ms-transform: translate(-50%, -50%)
 }
 
-#authpic {
-    width: 50rem;
+#authpicture {
+    width: 40rem;
     height: 50rem;
     border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 #authdesc {
@@ -68,12 +68,19 @@
 }
 
 #authdescbox {
-    background-color: rgba(255,255,255, 1);
-    background: linear-gradient(to right, white, pink);
+    
 }
 
 #aboutBG {
     /*background-image: url("../Images/background.jpg");*/
+    /*border:5px;
+    border-color: black;
+    border-radius: 5px;*/
+    border-radius: 30px;
+    border: 2px solid #73AD21;
+    padding: 0em 35em 0em 0em;
+    background-color: rgba(255,255,255, 1);
+    background: linear-gradient(to right, white, #28ff034a);
 }
 /*
     --------------------------------------------
