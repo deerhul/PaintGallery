@@ -9,15 +9,34 @@
         <div id="authdescbox">
             <p id="authdesc">
                 25 yr old <br />
-                    female <br />
-                    5'1 <br />
-                    "ello chap, howzitgon"' <br />
+                female <br />
+                5'1 <br />
+                "ello chap, howzitgon"' <br />
                 @*Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.*@
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.*@
 
             </p>
         </div>
     </div>
 </div>
 
+<script type="text/javascript">
+    //$(function () {
+    //    $("#authpicture").click(function () { $(this).fadeOut(3000);});
+    //});
 
+    //$(function () {
+    //    $("#authdesc").click(function () { $("#authpicture").fadeIn(3000); });
+    //});
+
+    $(document).ready(function () {
+        $("#authpicture").hide();
+        $("#authdesc").hide();
+
+        $("#authpicture").fadeIn(3000,
+            function () {
+                $("#authdesc").slideDown(3000);
+            });
+
+    });
+</script>
