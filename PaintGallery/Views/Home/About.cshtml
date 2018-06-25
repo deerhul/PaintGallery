@@ -21,22 +21,25 @@
 </div>
 
 <script type="text/javascript">
-    //$(function () {
-    //    $("#authpicture").click(function () { $(this).fadeOut(3000);});
+    $(document).ready(
+        function () {
+            $("#authpicture").hide();
+            $("#authdesc").hide();
+            $("#aboutBG").hide();
+
+            $("#authpicture").fadeIn(3000);
+            $("#aboutBG").fadeIn(2000);
+            $("#authdesc").slideDown(3000);
+        });
+
+    //$(document).ready(function () {
+    //    $("#authpicture").hide();
+    //    $("#authdesc").hide();
+
+    //    $("#authpicture").fadeIn(3000,
+    //        function () {
+    //            $("#authdesc").slideDown(3000);
+    //        });
+
     //});
-
-    //$(function () {
-    //    $("#authdesc").click(function () { $("#authpicture").fadeIn(3000); });
-    //});
-
-    $(document).ready(function () {
-        $("#authpicture").hide();
-        $("#authdesc").hide();
-
-        $("#authpicture").fadeIn(3000,
-            function () {
-                $("#authdesc").slideDown(3000);
-            });
-
-    });
 </script>

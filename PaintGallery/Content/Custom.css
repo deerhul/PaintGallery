@@ -82,6 +82,14 @@
     background-color: rgba(255,255,255, 1);
     background: linear-gradient(to right, white, #28ff034a);
 }
+
+#header {
+    font-family: Georgia,Times,Times New Roman,serif;
+    color: lightgreen;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    text-align: center;
+    font-size: 10rem;
+}
 /*
     --------------------------------------------
 */
