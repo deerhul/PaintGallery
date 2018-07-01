@@ -30,6 +30,11 @@
             $("#authpicture").fadeIn(3000);
             $("#aboutBG").fadeIn(2000);
             $("#authdesc").slideDown(3000);
+
+            //incase the device being used does not support the above animations
+            $$("#authpicture").show();
+            $("#aboutBG").show();
+            $("#authdesc").show();
         });
 
     //$(document).ready(function () {
